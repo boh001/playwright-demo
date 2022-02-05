@@ -2,7 +2,8 @@
   "name": "playwright-demo",
   "packageManager": "yarn@3.1.1",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "codegen": "playwright codegen wikipedia.org"
   },
   "devDependencies": {
     "@playwright/test": "^1.18.1",
