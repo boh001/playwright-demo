@@ -1,6 +1,9 @@
 import { test } from '@playwright/test'
 
 test.describe("", () => {
+  test.use({
+
+  })
   test('Market-Order XRP', async ({ page }) => {
     // 홈페이지로 이동
     await page.goto('https://www.gopax.co.kr/signin')

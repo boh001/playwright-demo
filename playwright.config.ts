@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig = {
     viewport:   { width: 1440, height: 1200 },
     launchOptions: {
       // slowMo: 100,
-    }
+    },
   },
   projects: [
     {
