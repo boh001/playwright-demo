@@ -4,11 +4,13 @@
 
 `Playwright`는 마이크로 소프트웨어가 개발하고 있는 Node.js 오픈소스 라이브러리로 `Chromium`, `Firefox`, `Webkit`과 같은 모던 브라우저에 대해서 웹 자동화를 지원합니다.
 
-`Playwright`의 목표는 E2E 테스트 자동화를 위한 좀 더 쾌적한 도구를 제공하는 것입니다. 
+웹 자동화를 통해 좀 더 빠르고 직관적인 E2E 테스트 환경을 만드는 것을 목표로합니다.
 
 이를 위해서 `Playwright` 위에서 구동되는  `@playwright/test` E2E 테스트 프레임워크를 제공합니다.
 
 ### E2E 테스트란?
+
+![test](test.png)
 
 기존의 `단위 테스트`, `통합 테스트`의 경우, 모듈 혹은 모듈들에 대한 조합에 대해서 테스트를 하고 그 외의 네트워크 계층, API, DB와 같이 모듈 외부의 디펜던시에 대해서는 모킹을 통해 독립적으로 만듭니다.
 
@@ -17,17 +19,30 @@
 
 ## 특징
 
-### 크로스 브라우저 지원
+### Cross-browser
 
 Playwright는 `Chromium`, `Firefox`, `Webkit`과 같은 모던 브라우저에 대해서 웹 자동화를 지원합니다.
 
 `devices`를 통해서 원하는 브라우저를 선택할 수 있습니다.
 ```ts
+// types.ts
+type Devices = {
+  "Galaxy Tab S4": DeviceDescriptor;
+  "iPad (gen 7)": DeviceDescriptor;
+  "iPad Mini": DeviceDescriptor;
+  "iPhone 12": DeviceDescriptor;
+  "Desktop Safari": DeviceDescriptor;
+  "Desktop Chrome": DeviceDescriptor;
+  "Desktop Edge": DeviceDescriptor;
+  "Desktop Firefox": DeviceDescriptor;
+}
+
+// config.ts
 import {devices, PlaywrightTestConfig} from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
-  use: { 
-    ...devices['Desktop Safari'] 
+  use: {
+    ...devices["Desktop Chrome"]
   },
 }
 ```
@@ -53,11 +68,17 @@ test("test 1", async ({ page }) => {
 
 검사를 통과 못할 경우, `timeout error`를 발생시키고 테스트는 실패합니다.
 
-### Authentication
-Playwright는 각 테스트들을 독립적인 환경에서 실행하지만 로그인 상태와 같이 전역적으로 중복되어 사용되는 상태를 위한 전략들을 제공합니다.
+명시적으로 특정 상태를 기다려야할 때는 `waitFor` 메소드를 사용하면 됩니다.
+```ts
+const orderSent = page.locator('#order-sent');
+await orderSent.waitFor({ state: 'detached' });
+```
 
-기본적인 방법은 `beforeEach`와 같은 훅을 사용해서 각 테스트에 로그인 상태를 주입하는방법입니다.
-하지만 이 방법은 테스트마다 로그인해야되기 때문에 테스트 속도를 늦추게 됩니다.
+### Authentication
+`Playwright`는 각 테스트들을 독립적인 환경에서 실행하지만 로그인 상태와 같이 전역적으로 중복되어 사용되는 상태를 위한 전략들을 제공합니다.
+
+기본적인 방법은 `beforeEach`와 같은 훅을 사용해서 각 테스트 실행 전에 로그인 관련 로직을 작동 시키는 방법입니다.
+하지만 이 방법은 테스트마다 로그인을 해야되기 때문에 테스트 속도를 늦추게 됩니다.
 
 ```ts
 import { test } from '@playwright/test';
@@ -115,22 +136,36 @@ const config: PlaywrightTestConfig = {
 export default config;
 ```
 
-Playwright는 세션 스토리지를 위한 API는 따로 제공하지 않기 때문에 세션 스토리지에 로그인 상태를 저장하는 경우에는 아래와 같은 `snippet`을 통해서 세션 스토리에 저장되어 있는 상태를 save/load 할 수 있습니다.
+Playwright는 세션 스토리지를 위한 API는 따로 제공하지 않습니다.
+
+세션 스토리지에 로그인 상태를 저장하는 경우에는 아래와 같은 코드를 통해서 세션 스토리에 저장되어 있는 상태를 save/load 할 수 있습니다.
 ```ts
+// global-setup.ts
 // Get session storage and store as env variable
-const sessionStorage = await page.evaluate(() => JSON.stringify(sessionStorage));
-process.env.SESSION_STORAGE = sessionStorage;
+async function globalSetup(config: FullConfig) {
+  const sessionStorage = await page.evaluate(() => JSON.stringify(sessionStorage));
+  process.env.SESSION_STORAGE = sessionStorage;
+}
+
+// playwright.config.ts
+import { PlaywrightTestConfig } from '@playwright/test';
+
+const config: PlaywrightTestConfig = {
+  globalSetup: require.resolve('./global-setup'),
+};
 
 // Set session storage in a new context
-const sessionStorage = process.env.SESSION_STORAGE;
-await context.addInitScript(storage => {
-  if (window.location.hostname === 'example.com') {
-    const entries = JSON.parse(storage);
-    for (const [key, value] of Object.entries(entries)) {
-      window.sessionStorage.setItem(key, value);
-    }
-  }
-}, sessionStorage);
+test("Test", async ({ page }) => {
+    const sessionStorage = process.env.SESSION_STORAGE;
+    await page.context.addInitScript(storage => {
+      if (window.location.hostname === 'example.com') {
+        const entries = JSON.parse(storage);
+        for (const [key, value] of Object.entries(entries)) {
+          window.sessionStorage.setItem(key, value);
+        }
+      }
+    }, sessionStorage);
+})
 ```
 
 ### Parallelism
@@ -175,7 +210,7 @@ test.describe.parallel('suite', () => {
   test('runs in parallel 2', async ({ page }) => { /* ... */ });
 });
 ```
-`config` 파일의` projects` 옵션을 통해서 각각의 다른 브라우저 환경에서의 동시 테스트를 진행할 수도 있습니다.
+`config` 파일의` projects` 옵션을 통해서 테스트파일들을 각각의 다른 브라우저 환경에서의 동시 테스트를 진행할 수도 있습니다.
 
 ```ts
 import {devices, PlaywrightTestConfig} from "@playwright/test";
@@ -197,21 +232,17 @@ const config: PlaywrightTestConfig = {
   ]
 }
 ```
-<br />
 
-### Test Generator 
-`codegen`을 통해서 좀 더 빠르게 테스트 코드를 작성할 수 있게끔 도와줍니다.
+### Test Generator
+`Playwright`는 개발자가 좀 더 빠르게 테스트 코드를 작성할 수 있는 기능을 제공합니다.
 
-```shell
-# cli
-npx playwright codegen wikipedia.org
-
-# package.json
-playwright codegen wikipedia.org
-```
+`codegen`은 브라우저를 열고 사용자의 interaction을 테스트 코드로 변환해 줍니다.
+이를 통해서 개발자가 일일히 테스트 코드를 모두 작성해야되는 번거로움을 없애고 테스트 코드에 소비되는 시간을 아낄 수 있습니다.
 
 ![](codgen.gif)
-
+```shell
+npx playwright codegen wikipedia.org
+```
 
 ## 참고 문서
 * [공식 문서](https://playwright.dev/)
