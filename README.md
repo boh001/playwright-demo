@@ -60,9 +60,8 @@ test("test 1", async ({ page }) => {
 
 * Attached: `DOM`에 존재
 * Visible: `visibility` 속성이 `visible`
-* Stable: 연속된 2 프레임 동안에 같은 위치에 존재
 * Enabled: `disabled` 속성이 `false` 
-* Receives Events: 이벤트 캡쳐링을 포함한 엘리먼트가 이벤트 수신 가능
+* Receives Events: 엘리먼트가 이벤트 수신 가능
 
 위에 검사 과정을 통과한 후에, `click` 액션을 동작시킵니다.
 
@@ -114,7 +113,8 @@ async function globalSetup(config: FullConfig) {
   await page.goto('https://github.com/login');
   await page.fill('input[name="user"]', 'user');
   await page.fill('input[name="password"]', 'password');
-  await page.click('text=Sign in');
+  await page.click('input[type="submit"]');
+  await page.waitForTimeout(5000)
   // Save signed-in state to 'storageState.json'.
   await page.context().storageState({ path: 'storageState.json' });
   await browser.close();
@@ -126,7 +126,7 @@ export default globalSetup;
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  globalSetup: require.resolve('./global-setup'),
+  globalSetup: 'global-setup',
   use: {
     // Tell all tests to load signed-in state from 'storageState.json'.
     storageState: 'storageState.json'
@@ -143,15 +143,17 @@ Playwright는 세션 스토리지를 위한 API는 따로 제공하지 않습니
 // global-setup.ts
 // Get session storage and store as env variable
 async function globalSetup(config: FullConfig) {
-  const sessionStorage = await page.evaluate(() => JSON.stringify(sessionStorage));
-  process.env.SESSION_STORAGE = sessionStorage;
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+
+  process.env.SESSION_STORAGE = await page.evaluate(() => JSON.stringify(sessionStorage));
 }
 
 // playwright.config.ts
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  globalSetup: require.resolve('./global-setup'),
+  globalSetup: 'global-setup-session.ts',
 };
 
 // Set session storage in a new context

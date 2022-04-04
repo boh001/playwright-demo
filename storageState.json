@@ -1,0 +1,270 @@
+{
+  "cookies": [
+    {
+      "sameSite": "None",
+      "name": "_GRECAPTCHA",
+      "value": "09AOMX25nguRqYOwzVq9S85Cr_H1uyR27U45EU1B7iRgLCM9_FrZI94bt5XV2umEpUTN-kljti7JRxsH7GkOYzq9s",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1664635660.137574,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "BID",
+      "value": "7DH3GKSTKO6V24E5F4BAWJYKY",
+      "domain": ".toast.com",
+      "path": "/",
+      "expires": 2524640401.768592,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "Start_Time",
+      "value": "\"2022040423\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1712155651.98264,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "s_IP_info",
+      "value": "\"121.131.166.45.23000\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1712155659.977979,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "s_au_id",
+      "value": "\"c6618ab148d7433a57b4b4ec17ff50a0895-6dfe\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1712155651.982675,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "reffer_domain",
+      "value": "\"(1649083649765)none(20220404234729)|\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1664635651.982686,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "iUm",
+      "value": "\"(1649083649765)gopax.co.kr^20220404234729^20220404234729#\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1664635651.982708,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "iDev",
+      "value": "\"(1649083649765)IP_info^121.131.166.45.23000#\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1711291651.982718,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "isCoverInflow",
+      "value": "\"(1649083649765)N#\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1664635651.982727,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "iHu",
+      "value": "\"(1649083649765)1^gopax.co.kr^20220404234729^20220404234729#\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1712155651.982737,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_ga",
+      "value": "GA1.3.1819610824.1649083652",
+      "domain": ".gopax.co.kr",
+      "path": "/",
+      "expires": 1712155659,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_gid",
+      "value": "GA1.3.1352101552.1649083652",
+      "domain": ".gopax.co.kr",
+      "path": "/",
+      "expires": 1649170059,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_dc_gtm_UA-103569439-2",
+      "value": "1",
+      "domain": ".gopax.co.kr",
+      "path": "/",
+      "expires": 1649083712,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_gat_gtag_UA_103569439_2",
+      "value": "1",
+      "domain": ".gopax.co.kr",
+      "path": "/",
+      "expires": 1649083712,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_gat_UA-103569439-2",
+      "value": "1",
+      "domain": ".gopax.co.kr",
+      "path": "/",
+      "expires": 1649083719,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_gcl_au",
+      "value": "1.1.292095393.1649083659",
+      "domain": ".gopax.co.kr",
+      "path": "/",
+      "expires": 1656859659,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "None",
+      "name": "IDE",
+      "value": "AHWqTUnGMsLgDnxaTFZ-EFXtalWSKaeId03cCWjTWhNUKXDzA1hcVzKwum4eB1sA",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1712155659.537895,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "None",
+      "name": "abTestType",
+      "value": "\"(1649083657753)SG_BI^BI06#SG_BH^BH58#SG_BG^BG57#SG_BD^BD75#SG_AZ^AZ065#SG_BA^BA27#SG_AW^AW28#SG_AT^AT075#SG_AL^AL38#SG_AE^AE86#SG_AI^AI45#SG_AF^AF02#SG_AD^AD01#SG_AC^AC03#SG_AA^AA05#SG_Y^Y13#SG_R^R49#SG_P^P52#SG_N^N08#SG_K^K75#SG_H^H62#SG_D^D12#SG_C^C81#SG_B^B22#SG_A^A15#\"",
+      "domain": ".mediacategory.com",
+      "path": "/",
+      "expires": 1654267659.978007,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_ga_RP9QY4MNNH",
+      "value": "GS1.1.1649083651.1.1.1649083660.51",
+      "domain": ".gopax.co.kr",
+      "path": "/",
+      "expires": 1712155660,
+      "httpOnly": false,
+      "secure": false
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.gopax.co.kr",
+      "localStorage": [
+        {
+          "name": "persist:i18n",
+          "value": "{\"locale\":\"\\\"ko\\\"\",\"_persist\":\"{\\\"version\\\":-1,\\\"rehydrated\\\":true}\"}"
+        },
+        {
+          "name": "tradingview.chartproperties",
+          "value": "{\"timezone\":\"Asia/Seoul\",\"priceScaleSelectionStrategyName\":\"auto\",\"dataWindowProperties\":{\"background\":\"rgba( 255, 254, 206, 0.2)\",\"border\":\"rgba( 96, 96, 144, 1)\",\"font\":\"Verdana\",\"fontBold\":false,\"fontItalic\":false,\"fontSize\":10,\"transparency\":80,\"visible\":true},\"paneProperties\":{\"backgroundType\":\"solid\",\"background\":\"#131722\",\"backgroundGradientStartColor\":\"#131722\",\"backgroundGradientEndColor\":\"#131722\",\"vertGridProperties\":{\"color\":\"#1E222D\",\"style\":0},\"horzGridProperties\":{\"color\":\"#1E222D\",\"style\":0},\"crossHairProperties\":{\"color\":\"#758696\",\"style\":1,\"transparency\":0,\"width\":1},\"topMargin\":10,\"bottomMargin\":8,\"axisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"indexedTo100\":false,\"log\":false,\"logDisabled\":false,\"alignLabels\":true,\"isInverted\":false},\"legendProperties\":{\"showStudyArguments\":true,\"showStudyTitles\":true,\"showStudyValues\":true,\"showSeriesTitle\":true,\"showSeriesOHLC\":true,\"showLegend\":true,\"showBarChange\":true,\"showBackground\":true,\"backgroundTransparency\":50,\"wrapText\":false}},\"scalesProperties\":{\"backgroundColor\":\"#ffffff\",\"lineColor\":\"#2A2E39\",\"textColor\":\"#B2B5BE\",\"fontSize\":12,\"scaleSeriesOnly\":false,\"showSeriesLastValue\":true,\"seriesLastValueMode\":1,\"showSeriesPrevCloseValue\":false,\"showStudyLastValue\":false,\"showSymbolLabels\":false,\"showStudyPlotLabels\":false,\"showBidAskLabels\":false,\"showPrePostMarketPriceLabel\":true,\"showFundamentalNameLabel\":false,\"showFundamentalLastValue\":false,\"barSpacing\":6,\"showCurrency\":true},\"mainSeriesProperties\":{\"style\":1,\"esdShowDividends\":true,\"esdShowSplits\":true,\"esdShowEarnings\":true,\"esdShowBreaks\":false,\"esdBreaksStyle\":{\"color\":\"rgba( 235, 77, 92, 1)\",\"style\":2,\"width\":1},\"esdFlagSize\":2,\"showCountdown\":false,\"bidAsk\":{\"visible\":false,\"lineStyle\":1,\"lineWidth\":1,\"bidLineColor\":\"#2196F3\",\"askLineColor\":\"#EF5350\"},\"prePostMarket\":{\"visible\":true,\"lineStyle\":1,\"lineWidth\":1,\"preMarketColor\":\"#fb8c00\",\"postMarketColor\":\"#2196f3\"},\"showInDataWindow\":true,\"visible\":true,\"showPriceLine\":true,\"priceLineWidth\":1,\"priceLineColor\":\"\",\"baseLineColor\":\"#B2B5BE\",\"showPrevClosePriceLine\":false,\"prevClosePriceLineWidth\":1,\"prevClosePriceLineColor\":\"rgba( 85, 85, 85, 1)\",\"minTick\":\"default\",\"extendedHours\":false,\"dividendsAdjustment\":{},\"sessVis\":false,\"statusViewStyle\":{\"fontSize\":16,\"showExchange\":true,\"showInterval\":true,\"symbolTextSource\":\"description\"},\"candleStyle\":{\"upColor\":\"#22cf80\",\"downColor\":\"#dd3f39\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#22cf80\",\"borderDownColor\":\"#dd3f39\",\"wickColor\":\"#737375\",\"wickUpColor\":\"#22cf80\",\"wickDownColor\":\"#dd3f39\",\"barColorsOnPrevClose\":false,\"drawBody\":true},\"hollowCandleStyle\":{\"upColor\":\"#22cf80\",\"downColor\":\"#dd3f39\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"rgba( 55, 134, 88, 1)\",\"borderUpColor\":\"#22cf80\",\"borderDownColor\":\"#dd3f39\",\"wickColor\":\"rgba( 115, 115, 117, 1)\",\"wickUpColor\":\"#22cf80\",\"wickDownColor\":\"#dd3f39\",\"drawBody\":true},\"haStyle\":{\"upColor\":\"#22cf80\",\"downColor\":\"#dd3f39\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"rgba( 55, 134, 88, 1)\",\"borderUpColor\":\"#22cf80\",\"borderDownColor\":\"#22cf80\",\"wickColor\":\"rgba( 115, 115, 117, 1)\",\"wickUpColor\":\"#22cf80\",\"wickDownColor\":\"#dd3f39\",\"showRealLastPrice\":false,\"barColorsOnPrevClose\":false,\"inputs\":{},\"inputInfo\":{},\"drawBody\":true},\"barStyle\":{\"upColor\":\"#22cf80\",\"downColor\":\"#dd3f39\",\"barColorsOnPrevClose\":false,\"dontDrawOpen\":false,\"thinBars\":true},\"hiloStyle\":{\"color\":\"#2196f3\",\"showBorders\":true,\"borderColor\":\"#2196f3\",\"showLabels\":true,\"labelColor\":\"#2196f3\",\"fontSize\":7,\"drawBody\":true},\"lineStyle\":{\"color\":\"#0303F7\",\"linestyle\":0,\"linewidth\":1,\"priceSource\":\"close\",\"styleType\":2},\"areaStyle\":{\"color1\":\"#606090\",\"color2\":\"#01F6F5\",\"linecolor\":\"#0094FF\",\"linestyle\":0,\"linewidth\":1,\"priceSource\":\"close\",\"transparency\":100},\"priceAxisProperties\":{\"autoScale\":true,\"autoScaleDisabled\":false,\"lockScale\":false,\"percentage\":false,\"percentageDisabled\":false,\"indexedTo100\":false,\"log\":false,\"logDisabled\":false,\"isInverted\":false,\"alignLabels\":true},\"renkoStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"upColorProjection\":\"rgba( 169, 220, 195, 1)\",\"downColorProjection\":\"rgba( 245, 166, 174, 1)\",\"borderUpColorProjection\":\"rgba( 169, 220, 195, 1)\",\"borderDownColorProjection\":\"rgba( 245, 166, 174, 1)\",\"wickUpColor\":\"#26a69a\",\"wickDownColor\":\"#ef5350\",\"inputs\":{\"source\":\"close\",\"sources\":\"Close\",\"boxSize\":3,\"style\":\"ATR\",\"atrLength\":14,\"wicks\":true},\"inputInfo\":{\"source\":{\"name\":\"source\"},\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"wicks\":{\"name\":\"Wicks\"}}},\"pbStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"upColorProjection\":\"rgba( 169, 220, 195, 1)\",\"downColorProjection\":\"rgba( 245, 166, 174, 1)\",\"borderUpColorProjection\":\"rgba( 169, 220, 195, 1)\",\"borderDownColorProjection\":\"rgba( 245, 166, 174, 1)\",\"inputs\":{\"source\":\"close\",\"lb\":3},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"lb\":{\"name\":\"Number of line\"}}},\"kagiStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"upColorProjection\":\"rgba( 169, 220, 195, 1)\",\"downColorProjection\":\"rgba( 245, 166, 174, 1)\",\"inputs\":{\"source\":\"close\",\"style\":\"ATR\",\"atrLength\":14,\"reversalAmount\":1},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"reversalAmount\":{\"name\":\"Reversal amount\"}}},\"pnfStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"upColorProjection\":\"rgba( 169, 220, 195, 1)\",\"downColorProjection\":\"rgba( 245, 166, 174, 1)\",\"inputs\":{\"sources\":\"Close\",\"reversalAmount\":3,\"boxSize\":1,\"style\":\"ATR\",\"atrLength\":14,\"oneStepBackBuilding\":false},\"inputInfo\":{\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"reversalAmount\":{\"name\":\"Reversal amount\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"oneStepBackBuilding\":{\"name\":\"One step back building\"}}},\"baselineStyle\":{\"baselineColor\":\"rgba( 117, 134, 150, 1)\",\"topFillColor1\":\"rgba(61, 204, 136, 0.4)\",\"topFillColor2\":\"rgba(61, 204, 136, 0.4)\",\"bottomFillColor1\":\"rgba(61, 204, 136, 0.4)\",\"bottomFillColor2\":\"rgba(61, 204, 136, 0.4)\",\"topLineColor\":\"#22cf80\",\"bottomLineColor\":\"#dd3f39\",\"topLineWidth\":1,\"bottomLineWidth\":1,\"priceSource\":\"close\",\"transparency\":50,\"baseLevelPercentage\":50},\"rangeStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"thinBars\":true,\"upColorProjection\":\"rgba( 169, 220, 195, 1)\",\"downColorProjection\":\"rgba( 245, 166, 174, 1)\",\"inputs\":{\"range\":10,\"phantomBars\":false},\"inputInfo\":{\"range\":{\"name\":\"Range\"},\"phantomBars\":{\"name\":\"Phantom bars\"}}},\"symbol\":\"CTC/BTC\",\"shortName\":\"\",\"timeframe\":\"\",\"onWidget\":false,\"interval\":\"60\"},\"chartEventsSourceProperties\":{\"visible\":true,\"futureOnly\":true,\"breaks\":{\"color\":\"rgba(85, 85, 85, 1)\",\"visible\":false,\"style\":2,\"width\":1}},\"tradingProperties\":{\"showPositions\":true,\"showOrders\":true,\"showExecutions\":true,\"extendLeft\":true,\"lineLength\":5,\"lineWidth\":1,\"lineStyle\":1},\"editorFontsList\":{\"0\":\"Verdana\",\"1\":\"Courier New\",\"2\":\"Times New Roman\",\"3\":\"Arial\"},\"volumePaneSize\":\"large\"}"
+        },
+        {
+          "name": "tvlocalstorage.available",
+          "value": "true"
+        },
+        {
+          "name": "tradingview.symboledit.dialog_last_entry",
+          "value": ""
+        },
+        {
+          "name": "persist:emailVerification",
+          "value": "{\"emailVerificationCodeSent\":\"0\",\"_persist\":\"{\\\"version\\\":-1,\\\"rehydrated\\\":true}\"}"
+        },
+        {
+          "name": "tradingview.chartproperties.mainSeriesProperties",
+          "value": "{\"style\":1,\"esdShowDividends\":true,\"esdShowSplits\":true,\"esdShowEarnings\":true,\"esdShowBreaks\":false,\"esdBreaksStyle\":{\"color\":\"rgba( 235, 77, 92, 1)\",\"style\":2,\"width\":1},\"esdFlagSize\":2,\"showCountdown\":false,\"bidAsk\":{\"visible\":false,\"lineStyle\":1,\"lineWidth\":1,\"bidLineColor\":\"#2196F3\",\"askLineColor\":\"#EF5350\"},\"prePostMarket\":{\"visible\":true,\"lineStyle\":1,\"lineWidth\":1,\"preMarketColor\":\"#fb8c00\",\"postMarketColor\":\"#2196f3\"},\"showInDataWindow\":true,\"showPriceLine\":true,\"priceLineWidth\":1,\"priceLineColor\":\"\",\"baseLineColor\":\"#5d606b\",\"showPrevClosePriceLine\":false,\"prevClosePriceLineWidth\":1,\"prevClosePriceLineColor\":\"rgba( 85, 85, 85, 1)\",\"extendedHours\":false,\"dividendsAdjustment\":{},\"sessVis\":false,\"statusViewStyle\":{\"fontSize\":16,\"showExchange\":true,\"showInterval\":true,\"symbolTextSource\":\"description\"},\"candleStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"#26a69a\",\"wickDownColor\":\"#ef5350\",\"barColorsOnPrevClose\":false,\"drawBody\":true},\"hollowCandleStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"#26a69a\",\"wickDownColor\":\"#ef5350\",\"drawBody\":true},\"haStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"drawWick\":true,\"drawBorder\":true,\"borderColor\":\"#378658\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"wickColor\":\"#B5B5B8\",\"wickUpColor\":\"#26a69a\",\"wickDownColor\":\"#ef5350\",\"showRealLastPrice\":false,\"barColorsOnPrevClose\":false,\"inputs\":{},\"inputInfo\":{},\"drawBody\":true},\"barStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"barColorsOnPrevClose\":false,\"dontDrawOpen\":false,\"thinBars\":true},\"hiloStyle\":{\"color\":\"#2196f3\",\"showBorders\":true,\"borderColor\":\"#2196f3\",\"showLabels\":true,\"labelColor\":\"#2196f3\",\"fontSize\":7,\"drawBody\":true},\"lineStyle\":{\"color\":\"#2196f3\",\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"styleType\":2},\"areaStyle\":{\"color1\":\"rgba(33, 150, 243, 0.28)\",\"color2\":\"#2196f3\",\"linecolor\":\"#2196f3\",\"linestyle\":0,\"linewidth\":2,\"priceSource\":\"close\",\"transparency\":100},\"renkoStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"borderUpColorProjection\":\"#336854\",\"borderDownColorProjection\":\"#7f323f\",\"wickUpColor\":\"#26a69a\",\"wickDownColor\":\"#ef5350\",\"inputs\":{\"source\":\"close\",\"sources\":\"Close\",\"boxSize\":3,\"style\":\"ATR\",\"atrLength\":14,\"wicks\":true},\"inputInfo\":{\"source\":{\"name\":\"source\"},\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"wicks\":{\"name\":\"Wicks\"}}},\"pbStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"borderUpColor\":\"#26a69a\",\"borderDownColor\":\"#ef5350\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"borderUpColorProjection\":\"#336854\",\"borderDownColorProjection\":\"#7f323f\",\"inputs\":{\"source\":\"close\",\"lb\":3},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"lb\":{\"name\":\"Number of line\"}}},\"kagiStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"inputs\":{\"source\":\"close\",\"style\":\"ATR\",\"atrLength\":14,\"reversalAmount\":1},\"inputInfo\":{\"source\":{\"name\":\"Source\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"reversalAmount\":{\"name\":\"Reversal amount\"}}},\"pnfStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"inputs\":{\"sources\":\"Close\",\"reversalAmount\":3,\"boxSize\":1,\"style\":\"ATR\",\"atrLength\":14,\"oneStepBackBuilding\":false},\"inputInfo\":{\"sources\":{\"name\":\"Source\"},\"boxSize\":{\"name\":\"Box size\"},\"reversalAmount\":{\"name\":\"Reversal amount\"},\"style\":{\"name\":\"Style\"},\"atrLength\":{\"name\":\"ATR length\"},\"oneStepBackBuilding\":{\"name\":\"One step back building\"}}},\"baselineStyle\":{\"baselineColor\":\"rgba( 117, 134, 150, 1)\",\"topFillColor1\":\"rgba( 38, 166, 154, 0.28)\",\"topFillColor2\":\"rgba( 38, 166, 154, 0.05)\",\"bottomFillColor1\":\"rgba( 239, 83, 80, 0.05)\",\"bottomFillColor2\":\"rgba( 239, 83, 80, 0.28)\",\"topLineColor\":\"rgba( 38, 166, 154, 1)\",\"bottomLineColor\":\"rgba( 239, 83, 80, 1)\",\"topLineWidth\":1,\"bottomLineWidth\":1,\"priceSource\":\"close\",\"transparency\":50,\"baseLevelPercentage\":50},\"rangeStyle\":{\"upColor\":\"#26a69a\",\"downColor\":\"#ef5350\",\"thinBars\":true,\"upColorProjection\":\"#336854\",\"downColorProjection\":\"#7f323f\",\"inputs\":{\"range\":10,\"phantomBars\":false},\"inputInfo\":{\"range\":{\"name\":\"Range\"},\"phantomBars\":{\"name\":\"Phantom bars\"}}},\"symbol\":\"CTC/BTC\",\"shortName\":\"\",\"timeframe\":\"\",\"onWidget\":false,\"interval\":\"60\",\"currencyId\":null,\"priceAxisProperties\":{\"autoScale\":true,\"alignLabels\":true}}"
+        },
+        {
+          "name": "tradingview.current_theme.name",
+          "value": "dark"
+        },
+        {
+          "name": "accessTokenInfo",
+          "value": "{\"cognitoToken\":\"eyJraWQiOiJpR1dsZHBObTl4UDA0c2lhcHRKNWpWTlJtbEVNVmVOWXJ3T1FTc3h3VWxJPSIsImFsZyI6IlJTMjU2In0.eyJvcmlnaW5fanRpIjoiZDA3ZjUwMmQtYWQzMi00NzUyLTlhMTQtNGI5YzdmNDRhYTE3Iiwic3ViIjoiNWIzNDA1NzUtNzIyZS00MTIxLWI0NmMtZTk0MTczYTQyNTU1IiwiZXZlbnRfaWQiOiJhMmQ0MWZjZC05OWI4LTQzMjItOTJmYy03MzAxZTYyNDY0MmUiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjQ5MDgzNjU3LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtbm9ydGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtbm9ydGhlYXN0LTJfT0hMaG50UlNnIiwiZXhwIjoxNjQ5MDg0MjU3LCJpYXQiOjE2NDkwODM2NTcsImp0aSI6ImJjNWRkM2VkLTAwZjYtNDIyMy04OGRiLTMxMWVmZmQ3OGVkMiIsImNsaWVudF9pZCI6IjJvMnJua24xZGZhM2U4cXZxOGFhcTNvZ2JmIiwidXNlcm5hbWUiOiI1YjM0MDU3NS03MjJlLTQxMjEtYjQ2Yy1lOTQxNzNhNDI1NTUifQ.TMYA9qWZdcdZrrCdoKk9v1BHbBi-8xRflSH1ZftBnJnKfOgeSkSPo3jQgTSL7IjNgSbXoKV24mG8_1RbWMV4LPMXrgkl628foa_a31dHv8g2choxlxlq0sxH0OaSkTlxx4pk1wyBvAnKyHsGgwS7Bg1ejh4Lo_0VzRSeto4Z73Jm2N7Al0kW6NLtBY9VdxK6-pKGPLIT4ttaPPGTjTGyjzj4t1ZWNe_7oRp-mbGPNuiKbZKZuPrW93VkDzfSlh2eIQRo0vGdmY03Lm3j-QTlr2Ji4ptDVa7yqeqBsjoV5Afkf93vi5sy3ejhQhOpPCCMN7qaAPZGnRcXWPF_AWT1qw\",\"k\":\"6a7671646e677666\",\"t\":\"521e85321c3952e93be16b8cd416f785937c0e971be795eb6a60edd4e014237ef23822dd86065a69fcd3e517e22095f28be45d1ce5c2f0500d8a050ca0a531c9ffd387df8b24ba6a\"}"
+        },
+        {
+          "name": "tradingview.IntervalWidget.quicks",
+          "value": "[\"60\",\"240\",\"1D\"]"
+        },
+        {
+          "name": "tradingview.ChartFavoriteDrawingToolbarWidget.visible",
+          "value": "false"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AOMX25lJgs2zCWbson2clsI6xw5LqYsQ6FHD8c7gbOyyC8HIRUUj85QBLI07yyJUyTd3VyJuuil76zrA-0mMP682CQ"
+        },
+        {
+          "name": "tradingview.BarsMarksContainer.visibile",
+          "value": "true"
+        },
+        {
+          "name": "tv.logger.logHighRate",
+          "value": "false"
+        },
+        {
+          "name": "tv.logger.loglevel",
+          "value": "2"
+        },
+        {
+          "name": "uuid",
+          "value": "8c16137d5e444cf8952d85eb4434b047"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "N3BmYWFkMTAzeXpvcA=="
+        }
+      ]
+    }
+  ]
+}
