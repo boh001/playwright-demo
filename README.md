@@ -126,10 +126,10 @@ export default example1Setup;
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  example1Setup: 'global-setup',
+  example1Setup: 'example1.setup.ts',
   use: {
     // Tell all tests to load signed-in state from 'storageState.json'.
-    storageState: 'storageState.json'
+    storageState: 'example1.state.json'
   }
 };
 
