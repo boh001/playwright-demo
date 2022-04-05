@@ -1,16 +1,17 @@
 import { chromium, FullConfig } from '@playwright/test';
 
-async function globalSetup(config: FullConfig) {
-  const browser = await chromium.launch();
+async function example1Setup(config: FullConfig) {
+  const browser = await chromium.launch({ headless: false });
   const page = await browser.newPage();
   await page.goto('https://github.com/login');
   await page.fill('input[name="login"]', 'boh001');
   await page.fill('input[name="password"]', 'asd369246*');
   await page.click('input[type="submit"]');
-  await page.waitForTimeout(5000)
+  await page.waitForTimeout(3000)
+
   // Save signed-in state to 'storageState.json'.
-  await page.context().storageState({ path: 'storageState.json' });
+  await page.context().storageState({ path: 'example1.state.json' });
   await browser.close();
 }
 
-export default globalSetup;
+export default example1Setup;

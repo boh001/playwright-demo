@@ -3,120 +3,120 @@
     {
       "sameSite": "None",
       "name": "_GRECAPTCHA",
-      "value": "09AOMX25nguRqYOwzVq9S85Cr_H1uyR27U45EU1B7iRgLCM9_FrZI94bt5XV2umEpUTN-kljti7JRxsH7GkOYzq9s",
+      "value": "09AG0dS7vo2iS0pCGLMEIU47bC6WrFrMfR4aIAgp08Ely3ch8hFENV4PDMhAeyzb3ON__1e4f0PcUDqnmt2rAQACM",
       "domain": "www.google.com",
       "path": "/recaptcha",
-      "expires": 1664635660.137574,
+      "expires": 1664712572.262761,
       "httpOnly": true,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "BID",
-      "value": "7DH3GKSTKO6V24E5F4BAWJYKY",
+      "value": "G6IHVOO4OG7F2FE08ASQRLYTA",
       "domain": ".toast.com",
       "path": "/",
-      "expires": 2524640401.768592,
+      "expires": 2524640401.906653,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "Start_Time",
-      "value": "\"2022040423\"",
+      "value": "\"2022040521\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1712155651.98264,
+      "expires": 1712232568.850306,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "s_IP_info",
-      "value": "\"121.131.166.45.23000\"",
+      "value": "\"121.131.166.45.87022\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1712155659.977979,
+      "expires": 1712232572.099528,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "s_au_id",
-      "value": "\"c6618ab148d7433a57b4b4ec17ff50a0895-6dfe\"",
+      "value": "\"702f259383021f2467fdaa17ff99c5c4b-4a3b\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1712155651.982675,
+      "expires": 1712232568.850335,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "reffer_domain",
-      "value": "\"(1649083649765)none(20220404234729)|\"",
+      "value": "\"(1649160567197)none(20220405210927)|\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1664635651.982686,
+      "expires": 1664712568.850346,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "iUm",
-      "value": "\"(1649083649765)gopax.co.kr^20220404234729^20220404234729#\"",
+      "value": "\"(1649160567197)gopax.co.kr^20220405210927^20220405210927#\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1664635651.982708,
+      "expires": 1664712568.850366,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "iDev",
-      "value": "\"(1649083649765)IP_info^121.131.166.45.23000#\"",
+      "value": "\"(1649160567197)IP_info^121.131.166.45.87022#\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1711291651.982718,
+      "expires": 1711368568.850376,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "isCoverInflow",
-      "value": "\"(1649083649765)N#\"",
+      "value": "\"(1649160567197)N#\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1664635651.982727,
+      "expires": 1664712568.850385,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "iHu",
-      "value": "\"(1649083649765)1^gopax.co.kr^20220404234729^20220404234729#\"",
+      "value": "\"(1649160567197)1^gopax.co.kr^20220405210927^20220405210927#\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1712155651.982737,
+      "expires": 1712232568.850395,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "Lax",
       "name": "_ga",
-      "value": "GA1.3.1819610824.1649083652",
+      "value": "GA1.3.54135118.1649160569",
       "domain": ".gopax.co.kr",
       "path": "/",
-      "expires": 1712155659,
+      "expires": 1712232571,
       "httpOnly": false,
       "secure": false
     },
     {
       "sameSite": "Lax",
       "name": "_gid",
-      "value": "GA1.3.1352101552.1649083652",
+      "value": "GA1.3.2139577540.1649160569",
       "domain": ".gopax.co.kr",
       "path": "/",
-      "expires": 1649170059,
+      "expires": 1649246971,
       "httpOnly": false,
       "secure": false
     },
@@ -126,7 +126,7 @@
       "value": "1",
       "domain": ".gopax.co.kr",
       "path": "/",
-      "expires": 1649083712,
+      "expires": 1649160628,
       "httpOnly": false,
       "secure": false
     },
@@ -136,7 +136,7 @@
       "value": "1",
       "domain": ".gopax.co.kr",
       "path": "/",
-      "expires": 1649083712,
+      "expires": 1649160629,
       "httpOnly": false,
       "secure": false
     },
@@ -146,47 +146,47 @@
       "value": "1",
       "domain": ".gopax.co.kr",
       "path": "/",
-      "expires": 1649083719,
+      "expires": 1649160631,
       "httpOnly": false,
       "secure": false
     },
     {
       "sameSite": "Lax",
       "name": "_gcl_au",
-      "value": "1.1.292095393.1649083659",
+      "value": "1.1.1638099884.1649160572",
       "domain": ".gopax.co.kr",
       "path": "/",
-      "expires": 1656859659,
+      "expires": 1656936571,
       "httpOnly": false,
       "secure": false
     },
     {
       "sameSite": "None",
       "name": "IDE",
-      "value": "AHWqTUnGMsLgDnxaTFZ-EFXtalWSKaeId03cCWjTWhNUKXDzA1hcVzKwum4eB1sA",
+      "value": "AHWqTUmAQ4z-hsNQPlY-xxH8nckU6nnmtXEjofFsSQVS8Mu0dN_j6Y0dOGtQ4iBy",
       "domain": ".doubleclick.net",
       "path": "/",
-      "expires": 1712155659.537895,
+      "expires": 1712232571.668398,
       "httpOnly": true,
       "secure": true
     },
     {
       "sameSite": "None",
       "name": "abTestType",
-      "value": "\"(1649083657753)SG_BI^BI06#SG_BH^BH58#SG_BG^BG57#SG_BD^BD75#SG_AZ^AZ065#SG_BA^BA27#SG_AW^AW28#SG_AT^AT075#SG_AL^AL38#SG_AE^AE86#SG_AI^AI45#SG_AF^AF02#SG_AD^AD01#SG_AC^AC03#SG_AA^AA05#SG_Y^Y13#SG_R^R49#SG_P^P52#SG_N^N08#SG_K^K75#SG_H^H62#SG_D^D12#SG_C^C81#SG_B^B22#SG_A^A15#\"",
+      "value": "\"(1649160570426)SG_BI^BI05#SG_BH^BH06#SG_BG^BG67#SG_BD^BD37#SG_AZ^AZ020#SG_BA^BA30#SG_AW^AW53#SG_AT^AT040#SG_AL^AL92#SG_AE^AE99#SG_AI^AI43#SG_AF^AF02#SG_AD^AD01#SG_AC^AC09#SG_AA^AA09#SG_Y^Y79#SG_R^R24#SG_P^P96#SG_N^N63#SG_K^K10#SG_H^H98#SG_D^D35#SG_C^C69#SG_B^B08#SG_A^A22#\"",
       "domain": ".mediacategory.com",
       "path": "/",
-      "expires": 1654267659.978007,
+      "expires": 1654344572.09956,
       "httpOnly": false,
       "secure": true
     },
     {
       "sameSite": "Lax",
       "name": "_ga_RP9QY4MNNH",
-      "value": "GS1.1.1649083651.1.1.1649083660.51",
+      "value": "GS1.1.1649160568.1.1.1649160572.56",
       "domain": ".gopax.co.kr",
       "path": "/",
-      "expires": 1712155660,
+      "expires": 1712232572,
       "httpOnly": false,
       "secure": false
     }
@@ -197,7 +197,7 @@
       "localStorage": [
         {
           "name": "persist:i18n",
-          "value": "{\"locale\":\"\\\"ko\\\"\",\"_persist\":\"{\\\"version\\\":-1,\\\"rehydrated\\\":true}\"}"
+          "value": "{\"locale\":\"\\\"en\\\"\",\"_persist\":\"{\\\"version\\\":-1,\\\"rehydrated\\\":true}\"}"
         },
         {
           "name": "tradingview.chartproperties",
@@ -225,7 +225,7 @@
         },
         {
           "name": "accessTokenInfo",
-          "value": "{\"cognitoToken\":\"eyJraWQiOiJpR1dsZHBObTl4UDA0c2lhcHRKNWpWTlJtbEVNVmVOWXJ3T1FTc3h3VWxJPSIsImFsZyI6IlJTMjU2In0.eyJvcmlnaW5fanRpIjoiZDA3ZjUwMmQtYWQzMi00NzUyLTlhMTQtNGI5YzdmNDRhYTE3Iiwic3ViIjoiNWIzNDA1NzUtNzIyZS00MTIxLWI0NmMtZTk0MTczYTQyNTU1IiwiZXZlbnRfaWQiOiJhMmQ0MWZjZC05OWI4LTQzMjItOTJmYy03MzAxZTYyNDY0MmUiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjQ5MDgzNjU3LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtbm9ydGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtbm9ydGhlYXN0LTJfT0hMaG50UlNnIiwiZXhwIjoxNjQ5MDg0MjU3LCJpYXQiOjE2NDkwODM2NTcsImp0aSI6ImJjNWRkM2VkLTAwZjYtNDIyMy04OGRiLTMxMWVmZmQ3OGVkMiIsImNsaWVudF9pZCI6IjJvMnJua24xZGZhM2U4cXZxOGFhcTNvZ2JmIiwidXNlcm5hbWUiOiI1YjM0MDU3NS03MjJlLTQxMjEtYjQ2Yy1lOTQxNzNhNDI1NTUifQ.TMYA9qWZdcdZrrCdoKk9v1BHbBi-8xRflSH1ZftBnJnKfOgeSkSPo3jQgTSL7IjNgSbXoKV24mG8_1RbWMV4LPMXrgkl628foa_a31dHv8g2choxlxlq0sxH0OaSkTlxx4pk1wyBvAnKyHsGgwS7Bg1ejh4Lo_0VzRSeto4Z73Jm2N7Al0kW6NLtBY9VdxK6-pKGPLIT4ttaPPGTjTGyjzj4t1ZWNe_7oRp-mbGPNuiKbZKZuPrW93VkDzfSlh2eIQRo0vGdmY03Lm3j-QTlr2Ji4ptDVa7yqeqBsjoV5Afkf93vi5sy3ejhQhOpPCCMN7qaAPZGnRcXWPF_AWT1qw\",\"k\":\"6a7671646e677666\",\"t\":\"521e85321c3952e93be16b8cd416f785937c0e971be795eb6a60edd4e014237ef23822dd86065a69fcd3e517e22095f28be45d1ce5c2f0500d8a050ca0a531c9ffd387df8b24ba6a\"}"
+          "value": "{\"cognitoToken\":\"eyJraWQiOiJpR1dsZHBObTl4UDA0c2lhcHRKNWpWTlJtbEVNVmVOWXJ3T1FTc3h3VWxJPSIsImFsZyI6IlJTMjU2In0.eyJvcmlnaW5fanRpIjoiZTE3YmViNDctMzY1My00ZDZhLTlkNTktYjg0N2M3M2M5N2RlIiwic3ViIjoiNWIzNDA1NzUtNzIyZS00MTIxLWI0NmMtZTk0MTczYTQyNTU1IiwiZXZlbnRfaWQiOiJkZmRhNzU4My1mNzgxLTQ2MTYtYjQ0OS1iYTk4YWRmMzBiMmQiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjQ5MTYwNTY5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtbm9ydGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtbm9ydGhlYXN0LTJfT0hMaG50UlNnIiwiZXhwIjoxNjQ5MTYxMTY5LCJpYXQiOjE2NDkxNjA1NjksImp0aSI6IjBhMWM4N2Q5LTVlNWMtNDFiNC04OTljLTllMDBiNWZjNTNiZCIsImNsaWVudF9pZCI6IjJvMnJua24xZGZhM2U4cXZxOGFhcTNvZ2JmIiwidXNlcm5hbWUiOiI1YjM0MDU3NS03MjJlLTQxMjEtYjQ2Yy1lOTQxNzNhNDI1NTUifQ.vIRPMNd-0RRm-KXA8tRFnZy_9MOAWBXcJxzQdkp2s1Tb3FtPdmxKrn3PukxbT1dG-C3xxs38nHlRDmeLBW_uwu-r_C-d6wZ_7b-sIrZz19N-McXyYf21xzQ6RO5MjqedNgFFFzcWTkx649Wy0mdBSqNIq0O6PUtvyEqOEKoHBCVOAUBNraai_X5NL2Ng4vDKjKe-Rh9HYDPBLraHeQfjMjWOrTG1zLRVfwnnTAAxfxd0IjVhlW84boq6pZf2WO9s4O1i7bnTeT52tcOctEJpFOzROjuEJ6b84GvP20uHbwSgyyswwDCY4TEHxNOO4ftuVOzBoDlL9VMlPg-N3hC08g\",\"k\":\"62766269746f6a6f\",\"t\":\"7abc46243c06763f4ebc88f9ef9363586a69d4970f147768eaf8079ced5d0fdcc007c59099724b98c999770a729a2c781592d6255d8a7da1ef64352152a56f18f9ffcee58603a476\"}"
         },
         {
           "name": "tradingview.IntervalWidget.quicks",
@@ -237,7 +237,7 @@
         },
         {
           "name": "_grecaptcha",
-          "value": "09AOMX25lJgs2zCWbson2clsI6xw5LqYsQ6FHD8c7gbOyyC8HIRUUj85QBLI07yyJUyTd3VyJuuil76zrA-0mMP682CQ"
+          "value": "09AG0dS7uW1A9Cppkb3vA6LvL2qDYGn5X9imQYgYPi9eUnFVosa7PtmoIgrYe8tMOEyZ_G69K7_XqoABIDHursP13Bkw"
         },
         {
           "name": "tradingview.BarsMarksContainer.visibile",
@@ -253,7 +253,7 @@
         },
         {
           "name": "uuid",
-          "value": "8c16137d5e444cf8952d85eb4434b047"
+          "value": "3e4ded1703aa456aa9ac5f8c9e0dccbe"
         }
       ]
     },
@@ -262,7 +262,7 @@
       "localStorage": [
         {
           "name": "rc::a",
-          "value": "N3BmYWFkMTAzeXpvcA=="
+          "value": "aHNlbjUwZDB3dXE2"
         }
       ]
     }

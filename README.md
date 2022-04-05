@@ -10,7 +10,7 @@
 
 ### E2E 테스트란?
 
-![test](test.png)
+![test](e2e.png)
 
 기존의 `단위 테스트`, `통합 테스트`의 경우, 모듈 혹은 모듈들에 대한 조합에 대해서 테스트를 하고 그 외의 네트워크 계층, API, DB와 같이 모듈 외부의 디펜던시에 대해서는 모킹을 통해 독립적으로 만듭니다.
 
@@ -21,7 +21,7 @@
 
 ### Cross-browser
 
-Playwright는 `Chromium`, `Firefox`, `Webkit`과 같은 모던 브라우저에 대해서 웹 자동화를 지원합니다.
+`Playwright`는 `Chromium`, `Firefox`, `Webkit`과 같은 모던 브라우저에 대해서 웹 자동화를 지원합니다.
 
 `devices`를 통해서 원하는 브라우저를 선택할 수 있습니다.
 ```ts
@@ -50,7 +50,7 @@ const config: PlaywrightTestConfig = {
 ### Auto-waiting
 `Playwright`는 특정 액션을 동작하기 전에 그 액션이 동작할 수 있는지에 대해서 `element`의 상태를 몇가지 검사를 진행합니다. 그 검사를 통과할 때 까지 자동으로 대기한 후에, 검사 통과 후 액션을 동작을 시킵니다.
 
-아래의 예시같은 경우, `확인`이라는 텍스트를 가진 `button element`가 5가지 검사를 통과할 때 까지 `click`이라는 액션을 보류합니다.
+아래의 예시같은 경우, `확인`이라는 텍스트를 가진 `button element`가 특정 검사를 통과할 때 까지 `click`이라는 액션을 보류합니다.
 
 ```ts
 test("test 1", async ({ page }) => {
@@ -100,14 +100,14 @@ test('second', async ({ page }) => {
 });
 ```
 
-위와 같은 문제점을 해결하기 위해서, Playwright는 로그인 상태를 `json` 형태로 저장하고 이를 이용해서 로그인 상태가 필요한 테스트에서 사용하는 전략을 제공합니다.
+위와 같은 문제점을 해결하기 위해서, `Playwright`는 로그인 상태를 `json` 형태로 저장하고 이를 이용해서 로그인 상태가 필요한 테스트에서 사용하는 전략을 제공합니다.
 
-일반적으로, 로그인 상태는 `localstorage`, `cookie storage`에 저장시키기 때문에 Playwright는 `localstorage`, `cookie storage` 상태를 `json` 형태로 저장하고 필요할 때 테스트 환경에 로드시킵니다.
+일반적으로, 로그인 상태는 `localstorage`, `cookie storage`에 저장시키기 때문에 `Playwright`는 `localstorage`, `cookie storage` 상태를 `json` 형태로 저장하고 필요할 때 테스트 환경에 로드시킵니다.
 ```ts
-// global-setup.ts
+// example1.setup.ts
 import { chromium, FullConfig } from '@playwright/test';
 
-async function globalSetup(config: FullConfig) {
+async function example1Setup(config: FullConfig) {
   const browser = await chromium.launch();
   const page = await browser.newPage();
   await page.goto('https://github.com/login');
@@ -120,13 +120,13 @@ async function globalSetup(config: FullConfig) {
   await browser.close();
 }
 
-export default globalSetup;
+export default example1Setup;
 
 // playwright.config.ts
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  globalSetup: 'global-setup',
+  example1Setup: 'global-setup',
   use: {
     // Tell all tests to load signed-in state from 'storageState.json'.
     storageState: 'storageState.json'
@@ -136,13 +136,13 @@ const config: PlaywrightTestConfig = {
 export default config;
 ```
 
-Playwright는 세션 스토리지를 위한 API는 따로 제공하지 않습니다.
+`Playwright`는 세션 스토리지를 위한 `API`는 따로 제공하지 않습니다.
 
 세션 스토리지에 로그인 상태를 저장하는 경우에는 아래와 같은 코드를 통해서 세션 스토리에 저장되어 있는 상태를 save/load 할 수 있습니다.
 ```ts
-// global-setup.ts
+// example1.setup.ts
 // Get session storage and store as env variable
-async function globalSetup(config: FullConfig) {
+async function example1Setup(config: FullConfig) {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
@@ -153,25 +153,37 @@ async function globalSetup(config: FullConfig) {
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  globalSetup: 'global-setup-session.ts',
+  example1Setup: 'example2.setup.ts',
 };
 
 // Set session storage in a new context
 test("Test", async ({ page }) => {
-    const sessionStorage = process.env.SESSION_STORAGE;
-    await page.context.addInitScript(storage => {
-      if (window.location.hostname === 'example.com') {
-        const entries = JSON.parse(storage);
-        for (const [key, value] of Object.entries(entries)) {
-          window.sessionStorage.setItem(key, value);
-        }
-      }
-    }, sessionStorage);
+  const browser = await chromium.launch({ headless: false });
+  const page = await browser.newPage();
+
+  await page.goto('https://www.gopax.co.kr/signin');
+
+  await page.fill('[placeholder="휴대전화 번호 또는 이메일 주소 입력"]', "user")
+  await page.fill('[placeholder="비밀번호 입력"]', "password")
+  await page.locator('.email-verification-button').click()
+
+  await page.fill('#pin-1', "3")
+  await page.fill('#pin-2', "6")
+  await page.fill('#pin-3', "9")
+  await page.fill('#pin-4', "2")
+  await page.fill('#pin-5', "4")
+  await page.fill('#pin-6', "6")
+
+  await page.waitForTimeout(3000)
+
+  process.env.SESSION_STORAGE = await page.evaluate(() => JSON.stringify(sessionStorage));
+  await page.context().storageState({ path: 'example2.state.json' });
+  await browser.close()
 })
 ```
 
 ### Parallelism
-Playwright에서 기본적으로 테스트 파일 개수만큼의 `worker process`를 생성하여 동시에 실행되고 파일 안에 있는 테스트들은 순서대로 실행합니다.
+`Playwright`에서 기본적으로 테스트 파일 개수만큼의 `worker process`를 생성하여 동시에 실행되고 파일 안에 있는 테스트들은 순서대로 실행합니다.
 
 아래의 예시의 경우 다음과 같이 동작합니다.
 * `suite 1` 과 `suite 2` 병렬로 실행
@@ -238,7 +250,7 @@ const config: PlaywrightTestConfig = {
 ### Test Generator
 `Playwright`는 개발자가 좀 더 빠르게 테스트 코드를 작성할 수 있는 기능을 제공합니다.
 
-`codegen`은 브라우저를 열고 사용자의 interaction을 테스트 코드로 변환해 줍니다.
+`codegen`은 브라우저를 열고 사용자의 인터렉션을 테스트 코드로 변환해 줍니다.
 이를 통해서 개발자가 일일히 테스트 코드를 모두 작성해야되는 번거로움을 없애고 테스트 코드에 소비되는 시간을 아낄 수 있습니다.
 
 ![](codgen.gif)

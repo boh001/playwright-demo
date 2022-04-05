@@ -2,19 +2,21 @@ import {test} from "@playwright/test";
 
 test.describe("example2", () => {
   test("signin gopax", async ({ page }) => {
-    const sessionStorage = process.env.SESSION_STORAGE;
+    const jsonStorage = process.env.SESSION_STORAGE;
 
     await page.goto('https://www.gopax.co.kr')
 
-    if (sessionStorage) {
-      const storage: string = JSON.parse(sessionStorage);
-      await page.evaluate(storage => {
-        for (const [key, value] of Object.entries(storage)) {
+    if (jsonStorage) {
+      const parsedObj: string = JSON.parse(jsonStorage);
+      await page.evaluate(obj => {
+        for (const [key, value] of Object.entries(obj)) {
           window.sessionStorage.setItem(key, value);
         }
-      }, storage)
+      }, parsedObj)
     }
 
-   await page.waitForTimeout(5000000)
+    await page.goto('https://www.gopax.co.kr/exchange')
+
+    await page.waitForTimeout(3000)
   })
 })
