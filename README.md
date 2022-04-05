@@ -126,7 +126,7 @@ export default example1Setup;
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  example1Setup: 'example1.setup.ts',
+  globalSetup: 'example1.setup.ts',
   use: {
     // Tell all tests to load signed-in state from 'storageState.json'.
     storageState: 'example1.state.json'
@@ -153,7 +153,7 @@ async function example1Setup(config: FullConfig) {
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  example1Setup: 'example2.setup.ts',
+  globalSetup: 'example2.setup.ts',
 };
 
 // Set session storage in a new context
