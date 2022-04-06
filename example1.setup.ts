@@ -4,8 +4,8 @@ async function example1Setup(config: FullConfig) {
   const browser = await chromium.launch({ headless: false });
   const page = await browser.newPage();
   await page.goto('https://github.com/login');
-  await page.fill('input[name="login"]', 'boh001');
-  await page.fill('input[name="password"]', 'asd369246*');
+  await page.fill('input[name="login"]', 'user');
+  await page.fill('input[name="password"]', 'password');
   await page.click('input[type="submit"]');
   await page.waitForTimeout(3000)
 
